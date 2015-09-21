@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(outputDescriptionLabel));
             this.milesPromptLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gallonsPromptLabel = new System.Windows.Forms.Label();
@@ -112,7 +113,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 261);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(440, 272);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.gallonsTextBox);
